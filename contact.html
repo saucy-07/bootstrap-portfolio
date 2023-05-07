@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about-me</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <style>
+        .welcome, li {
+            animation-name: fadeInAnimation;
+            animation-iteration-count: 1;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .label-01, .label-02 {
+            display: flex;
+        }
+
+        .message-div {
+            display: flex;
+        }
+
+        .email {
+            padding-left: 10px;
+        }
+
+        .insta, .meta, .twitter {
+            display: flex;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-nav navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid align-content-right">
+            <div class="welcome navbar navbar-nav navbar-dark bg-black fw-bold text-light"><h3>CONNOR B. WINKWORTH</h3></div>
+            <div>
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold pe-md-3" href="/index.html"><h4>HOME</h4></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold pe-md-3" href="/about.html"><h4>ABOUT ME</h4></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold pe-md-3" href="#"><h4>CONTACT</h4></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     
+<div class="m-lg-3 p-lg-2 bg-body-secondary rounded-4 w-50 h-75">
+    <form
+    action="https://formspree.io/f/xwkjaayr"
+    method="POST"
+  >
+    <label class="label-01">
+      <h3 class="fw-semibold">Your email:</h3>
+      <input class="rounded-3" type="email" name="email">
+    </label>
+    <div class="message-div">
+        <label class="label-02">
+            <h3 class="fw-semibold">Your message:</h3>
+            <textarea class="rounded-3" name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button class="rounded-3" type="submit"><h4>Send</h4></button>
+    </div>
+  </form>
+</div>
+
+<div class="m-lg-3 p-lg-2 bg-body-secondary rounded-4 w-25 mh-100">
+    <div class="link-div">
+        <div class="insta">
+            <img src="https://w7.pngwing.com/pngs/454/401/png-transparent-logo-instagram-text-logo-number-thumbnail.png" alt="insta" height="40px" width="40px">
+            <a class="p-2" href="https://www.instagram.com/s_s_s_saucy/"><h5>s_s_s_saucy</h5></a>
+        </div>
+        <div class="meta">
+            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-facebook_-512.png" alt="meta" height="40px" width="40px">
+            <a class="p-2" href="https://www.facebook.com/connor.winkworth.10"><h5>connor.winkworth.10</h5></a>
+        </div>
+        <div class="twitter">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" alt="twitter" height="40px" width="40px">
+            <a class="p-2" href="https://twitter.com/ssssaucy"><h5>ssssaucy</h5></a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
